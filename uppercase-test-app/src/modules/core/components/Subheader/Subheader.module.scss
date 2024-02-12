@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+  margin-bottom: 57px;
+  &__title {
+    font-size: 22px;
+    line-height: 31px;
+  }
+}

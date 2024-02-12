@@ -1,0 +1,60 @@
+.root {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #010515;
+  list-style-type: none;
+  cursor: pointer;
+
+  .arrowControls {
+    padding: 4px 8px;
+    border-radius: 8px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .arrowControlsPrev {
+    margin-right: 4px;
+  }
+
+  .arrowControlsNext {
+    margin-left: 4px;
+  }
+
+  .arrowControlsPrevIcon {
+    margin-right: 2px;
+  }
+
+  .arrowControlsNextIcon {
+    margin-left: 2px;
+  }
+}
+
+.page {
+  padding: 4px 8px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.3s;
+  min-width: 30px;
+  text-align: center;
+  user-select: none;
+}
+
+.activePage {
+  background-color: #F3F5F9;
+  color: #010515;
+}
+
+.disabled {
+  color: gray;
+  pointer-events: none;
+}
+
