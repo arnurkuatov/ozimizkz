@@ -80,11 +80,21 @@ const Home: FC = () => {
                 {lists.map((item) => (
                     <Droppable key={item.name} id={item.name}>
                         <h1 className={styles.title}>{item.name}</h1>
-                        <div>{!item.done ? <>
+                        <div>{!item.done ?
+                            <>
                                 {!isAddTask ? <Button className={styles.button} onClick={handleIsAddTask}>
-                                    Добавить задачку
-                                </Button> : null}
-                                <>{isAddTask ? <AddTask onCloseAddTask={handleCloseAddTask}/> : null}</>
+                                        Добавить задачку
+                                    </Button>
+                                    :
+                                    null
+                                }
+                                <>
+                                    {isAddTask ?
+                                        <AddTask onCloseAddTask={handleCloseAddTask}/>
+                                        :
+                                        null
+                                    }
+                                </>
                             </>
                             :
                             null

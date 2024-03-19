@@ -25,6 +25,10 @@ const AddTask: FC<Props> = ({onCloseAddTask}) => {
     }
     const handleAddTask = () => {
         onAddTask(inputValue)
+            .unwrap()
+            .then(() => {
+                onCloseAddTask()
+            })
     }
 
     const isDisabled = inputValue.task && inputValue.author && inputValue.title
