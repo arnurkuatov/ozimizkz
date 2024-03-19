@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 20px;
+
+  .title {
+    color: #4D5C6D;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .button {
+    margin-bottom: 10px;
+  }
+
+  .btn_delete {
+    margin-top: 10px;
+  }
+
+  .block {
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    background: #FCFEFF;
+    border: 1px solid #DAE4F0;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #4D5C6D;
+    font-family: 'Roboto', sans-serif;
+  }
+}

@@ -1,0 +1,10 @@
+.root {
+  &__block {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  &__done {
+    text-decoration: line-through
+  }
+}

@@ -1,0 +1,15 @@
+.droppableContainer {
+  padding: 0 8px 8px 8px;
+  margin: 0 8px;
+  border: 1px solid #DAE4F0;
+  border-radius: 16px;
+  min-height: 100px;
+  min-width: 300px;
+
+  &:hover,
+  &:focus-within {
+    background-color: #f2f6fc;
+    box-shadow: 0 0 0 4px rgba(170, 203, 241, 0.5);
+    border: 1px solid #1b579b;
+  }
+}
